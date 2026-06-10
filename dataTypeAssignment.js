@@ -1,0 +1,15 @@
+let userName = "Bhavya";
+let organization = "TCS";
+let contactNumber = 123455667;
+let knowsAutomation = false;
+let usesPlaywright;
+console.log("userName:", userName);
+console.log("type:", typeof userName);
+console.log("organization:", organization);
+console.log("type:", typeof organization);
+console.log("contactNumber:", contactNumber);
+console.log("type:", typeof contactNumber);
+console.log("knowsAutomation", knowsAutomation);
+console.log("type:", typeof knowsAutomation);
+console.log("usesPlaywright:", usesPlaywright);
+console.log("type:", typeof usesPlaywright);
