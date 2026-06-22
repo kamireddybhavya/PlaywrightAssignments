@@ -80,7 +80,7 @@ await page.locator('[aria-label="Search this list..."]')
           .fill(`Blake`);
 await page.keyboard.press('Enter');
 //await page.waitForTimeout(8000)
-await page.click(`[title="Show 2 more actions"]`)
+await page.click(`//button[@class="slds-button slds-button_icon-border slds-button_icon-x-small"]`)
 await page.click(`(//a[@class="highlightButton"])[1]`)
 await page.click(`[class="select"]`)
 await page.click(`[title="Mr."]`)
