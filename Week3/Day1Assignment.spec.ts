@@ -1,0 +1,21 @@
+import{test,expect} from '@playwright/test';
+test('TestLeaf', async({page})=>{
+    await page.goto("http://leaftaps.com/opentaps/control/main")
+
+    await page.getByRole(`textbox`, {name: 'Username'}).fill(`Demosalesmanager`)
+    await page.getByLabel(`Password`).fill(`crmsfa`)
+    await page.getByRole(`button`,{name:'Login'}).click()
+    //await page.getByRole(`link`,{name:'CRM/SFA'}).click()
+    await page.getByText(`CRM/SFA`).click()
+    await page.getByText(`Leads`,{exact:true}).click()
+    await page.getByText(`Create Lead`).nth(0).click()
+    await page.locator(`#createLeadForm_companyName`).fill(`TCS`)
+    await page.locator(`//input [@class="inputBox"and @name="firstName"]`).fill(`Bhavya`)
+    await page.locator(`(//input[@name="lastName"])[3]`).fill(`K`)
+    await page.locator(`[name="personalTitle"]`).fill(`Ms.`)
+    await page.locator(`#createLeadForm_generalProfTitle`).fill('Automation Tester')
+    await page.locator(`#createLeadForm_annualRevenue`).fill(`5 Lakhs`)
+    await page.locator(`[id="createLeadForm_departmentName"]`).fill(`Testing`)
+    await page.locator(`#createLeadForm_primaryPhoneNumber`).fill(`12356`)
+    await page.getByRole(`button`,{name:"Create Lead"}).click()
+})
