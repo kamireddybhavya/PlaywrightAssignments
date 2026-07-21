@@ -1,0 +1,15 @@
+//create Account-POST
+{
+    "id": "001g500000YNQTTAA5",
+    "success": true,
+    "errors": []
+}
+//fetch Account-GET
+ "Id": "001g500000YNQTTAA5",
+    "IsDeleted": false,
+    "MasterRecordId": null,
+    "Name": "Admin",
+//Update Account- PATCH
+204 No Content
+//Delete Account- DELETE
+204 No Content
