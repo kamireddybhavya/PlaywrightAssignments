@@ -1,0 +1,19 @@
+//Change Request
+//POST--create_request 200OK
+https://dev398647.service-now.com/api/now/table/change_request
+{
+    "short_description": "Got a network issue in service now"
+}
+"number": "CHG0030003",
+"sys_id": "48953be0835a0b10a6d5f696feaad3f4",
+
+//GET--Feth_request 200OK
+https://dev398647.service-now.com/api/now/table/change_request/48953be0835a0b10a6d5f696feaad3f4
+//PATCH--upadate_request 200OK
+https://dev398647.service-now.com/api/now/table/change_request/48953be0835a0b10a6d5f696feaad3f4
+{
+    "short_description":"Got a network when trying to login",
+    "description":"Unable to Log In"
+}
+//DELETE--delete_request 204 NOContent
+https://dev398647.service-now.com/api/now/table/change_request/48953be0835a0b10a6d5f696feaad3f4
